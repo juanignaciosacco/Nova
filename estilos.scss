@@ -1,9 +1,149 @@
-/* Navbar */
+// Colores
+$grisMedioOscuro: #919191;
+$grisMedio: #858585;
+$grisMedioClaro: #D1D1D1;
+$grisOscuro: #454545;
+$girsMedioMasOscuro: #6B6B6B;
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  color: $grisOscuro;
+  font-size: 18px;
+}
+
+.portada {
+  width: 100%;
+}
+
+
+h1 {
+  font-weight: 300;
+  color: $grisMedioOscuro;
+}
+
+h2 {
+  font-weight: 400;
+  color: $grisMedioOscuro;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+hr {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.btn {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg, rgb(54, 54, 54) 0%, rgb(132, 131, 131) 55%, rgb(163, 163, 163) 75%);
+  &:hover {
+    background-color: $grisMedioClaro;
+    background-image: none;
+    border: 2px solid $grisOscuro;
+  }
+  &:active {
+    top: 2px;
+  }
+}
+
+/* Comeinza Navbar */
 
 .logo {
   width: 200px;;
 }
 
+/* Fin Navbar */
+
+
+/* Comeinza pagina Medio Ambiente */
+
+.logoStd {
+  width: 250px;
+}
+
+.textoInformativo {
+  text-align: justify;
+}
+
+.productosMedioAmbiente {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 20px;
+}
+
+.prodCard {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  &:hover {
+    background-color: $grisMedioClaro;
+  }
+}
+
+.imgsBarometrica {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  img {
+    width: 500px;
+    padding: 10px;
+    &:first-child {
+      border-top: 2px solid $grisMedioClaro;
+      border-left: 2px solid $grisMedioClaro;
+    }
+    &:last-child {
+      border-bottom: 2px solid $grisMedioClaro;
+      border-right: 2px solid $grisMedioClaro;
+    }
+  }
+
+}
+  #listContenedores {
+    margin: 40px auto;
+      li {
+        list-style-position: inside;
+      }
+  }
+
+  .imgsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img {
+      padding: 10px;
+      width: 500px;
+      &:first-child {
+        border-top: 2px solid $grisMedioClaro;
+        border-left: 2px solid $grisMedioClaro;
+      }
+      &:last-child {
+        border-bottom: 2px solid $grisMedioClaro;
+        border-right: 2px solid $grisMedioClaro;
+      }
+    }
+  }
+
+/* Fin pagina Medio Ambiente */
 
 
 
