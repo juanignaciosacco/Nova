@@ -30,6 +30,10 @@ h3 {
   font-weight: 300;
 }
 
+h5 {
+  font-weight: 300;
+}
+
 hr {
   width: 70%;
   margin: 50px auto;
@@ -145,7 +149,21 @@ hr {
 
 /* Fin pagina Medio Ambiente */
 
+/* Comienza pagina Repuestos */
 
+.containerLogos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logosRepuestos {
+  width: 150px;
+  margin: 10px;
+}
+
+/* Finaliza pagina Repuestos */
 
 
 
