@@ -2,8 +2,11 @@
 $grisMedioOscuro: #919191;
 $grisMedio: #858585;
 $grisMedioClaro: #D1D1D1;
+$grisClaro: #e6e4e4;
 $grisOscuro: #454545;
 $girsMedioMasOscuro: #6B6B6B;
+$girsMedioDorado: #ABAB83;
+$girsMedioDoradoMasOscuro: #919166;
 
 * {
   font-family: 'Ubuntu', sans-serif;
@@ -17,13 +20,13 @@ $girsMedioMasOscuro: #6B6B6B;
 
 
 h1 {
-  font-weight: 300;
-  color: $grisMedioOscuro;
+  font-weight: 500;
+  color: $girsMedioDoradoMasOscuro;
 }
 
 h2 {
   font-weight: 400;
-  color: $grisMedioOscuro;
+  color: $girsMedioDoradoMasOscuro;
 }
 
 h3 {
@@ -42,7 +45,7 @@ hr {
 .btn {
   min-width: 130px;
   height: 40px;
-  color: #fff;
+  color: $grisClaro;
   padding: 5px 10px;
   font-weight: 300;
   cursor: pointer;
@@ -53,11 +56,11 @@ hr {
   border-radius: 5px;
   border: none;
   background-size: 120% auto;
-  background-image: linear-gradient(315deg, rgb(54, 54, 54) 0%, rgb(132, 131, 131) 55%, rgb(163, 163, 163) 75%);
+  background-image: linear-gradient(315deg, rgb(54, 54, 54) 0%, rgb(132, 131, 131) 55%, rgb(120, 120, 120) 75%);
   &:hover {
-    background-color: $grisMedioClaro;
-    background-image: none;
+    color: #fff;
     border: 2px solid $grisOscuro;
+    background-position: right center;
   }
   &:active {
     top: 2px;
@@ -120,32 +123,156 @@ hr {
       border-right: 2px solid $grisMedioClaro;
     }
   }
-
 }
-  #listContenedores {
-    margin: 40px auto;
-      li {
-        list-style-position: inside;
-      }
-  }
 
-  .imgsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    img {
-      padding: 10px;
-      width: 500px;
-      &:first-child {
-        border-top: 2px solid $grisMedioClaro;
-        border-left: 2px solid $grisMedioClaro;
-      }
-      &:last-child {
-        border-bottom: 2px solid $grisMedioClaro;
-        border-right: 2px solid $grisMedioClaro;
-      }
+#listContenedores {
+  margin: 40px auto;
+    li {
+      list-style-position: inside;
+    }
+}
+
+.imgsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  img {
+    padding: 10px;
+    width: 500px;
+    &:first-child {
+      border-top: 2px solid $grisMedioClaro;
+      border-left: 2px solid $grisMedioClaro;
+    }
+    &:last-child {
+      border-bottom: 2px solid $grisMedioClaro;
+      border-right: 2px solid $grisMedioClaro;
     }
   }
+}
+
+.imgsLimpAsp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 20px;
+}
+
+.imgCamion { 
+  img {
+    width: 100%;
+  }
+}
+
+.imgLimp {
+  max-width: 800px;
+  img {
+    width: 100%;
+  }
+}
+
+.imagenesGrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  img {
+    width: 100%;
+  }
+}
+
+.gridTransp {
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: 3;
+  row-gap: 10px;
+  column-gap: 10px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.img1 {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+
+.img2 {
+  grid-row: 1/2;
+  grid-column: 3/5;
+}
+
+.img3 {
+  grid-row: 2/4;
+  grid-column: 3/5;
+}
+
+.img4 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.img5 {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+.one {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.two {
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+
+.three {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.four {
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+
+.five {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.six {
+  grid-column: 3/5;
+  grid-row: 3/4;
+}
+
+.seven {
+  grid-column: 1/5;
+  grid-row: 4/5;
+}
+
+.imgGrid {
+  width: 90%;
+}
+
+#infoPowLimpSilas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+#infoGirLimpSilas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
 
 /* Fin pagina Medio Ambiente */
 
@@ -165,9 +292,117 @@ hr {
 
 /* Finaliza pagina Repuestos */
 
+/* Inicia pagina Asfalto */
 
+.buttonsContainerAsf {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+.logoSM {
+  width: 300px;
+}
 
+.logoMetong {
+  width: 400px;
+}
+
+span {
+  color: $girsMedioDoradoMasOscuro;
+}
+
+#sealmaster {
+  #productosSeal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+#metong {
+  #productosMetong {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.prodsSeal {
+  width: 600px;
+  img {
+    width: 100%;
+  }
+}
+
+.prodsMetong {
+  min-height: 500px;
+  width:600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+}
+
+.list {
+  li {
+    list-style-position: inside;
+  }
+}
+
+.imagenGrande {
+  width: 800px;
+  margin: 50px auto;
+  img {
+    width: 100%;
+  }
+}
+
+.oculto {
+  display: none;
+}
+
+.link {
+  text-decoration: none;
+  color: $grisClaro;
+  &:hover {
+    color: $grisClaro;
+  }
+}
+
+/* Finaliza pagina Asfalto */
+
+/* Pagina contacto */
+
+form {
+  display: grid;
+  grid-gap: 10px;
+
+  label {
+    display: block;
+    font-weight: bold;
+    color: $girsMedioDorado;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $grisMedioOscuro;
+    border-radius: 5px;
+  }
+}
+
+/* Fin Pagina contacto */
 
 /* Comienza Footer */
 

@@ -70,6 +70,7 @@
     </header>
 
     <main>
+      <!-- Info general -->
       <h1 class="text-center mt-5 ">Medio Ambiente</h1>
       <div class="container-fluid">
         <div class="mt-5 text-center">
@@ -94,35 +95,39 @@
         </div>
       </div>
       <hr>
+      <!-- Avances Productos  -->
       <h2 class="text-center">Productos</h2>
-      <div class="container-fluid text-center">
+      <div class="text-center mt-5 mb-5">
+        <button class="btn oculto" id="btnVolver">Volver</button>
+      </div>
+      <div class="container-fluid text-center" id="sectionMA">
         <div class="productosMedioAmbiente mt-5">
           <div class="prodCard">
             <h4>Eliminación de obstrucciones y pegaduras</h4>
             <p class="mt-3">​​Tecnologías adaptadas a los diferentes tipos de pegaduras y soluciones preventivas permiten optimizar la productividad recuperando la integralidad de las capacidades de almacenamiento.
             </p>
-            <button class="btn">Ver más</button>
+            <button class="btn" id="btnElimObs">Ver más</button>
           </div>
           <div class="prodCard">
             <h4>Limpieza industrial por aspiración</h4>
             <p class="mt-3">
               Amplia gama de material industrial de aspiración con el fin de responder a cada necesidad de limpieza, bombeo y reciclaje: de 4 a 300 kW – eléctrico o diésel – unidades fijas, móviles o camiones.
             </p>
-            <button class="btn">Ver más</button>
+            <button class="btn" id="btnLimpInd">Ver más</button>
           </div>
           <div class="prodCard">
             <h4>Optimización de los transportadores de cintas</h4>
             <p class="mt-3">
               Sistema innovador optimizando la estanqueidad de cualquier transportador de cinta. Los problemas de seguridad, reducción de emisiones de polvo y costes de mantenimiento pueden resolverse gracias a nuestro sistema patentado.
             </p>
-            <button class="btn">Ver más</button>
+            <button class="btn" id="btnOptTransp">Ver más</button>
           </div>
           <div class="prodCard">
             <h4>Prestaciones de limpieza de silos y tolvas</h4>
             <p class="mt-3">
               Prestaciones de servicios para operaciones de limpieza con seguridad de sus silos y tolvas, sin intervención humana. Estas se pueden completar con una prestación de aspiración.
             </p>
-            <button class="btn">Ver más</button>
+            <button class="btn" id="btnPrestLipm">Ver más</button>
           </div>
         </div>
 
@@ -170,6 +175,220 @@
         </div>
 
       </div>
+      <!-- Secciones Productos -->
+      <!-- Elim Obstrucciones -->
+      <div class="container-fluid text-center oculto" id="sectionElimObs">
+        <h3 class="mb-5">Eliminación de obstrucciones & pegaduras</h3>
+        <p>Procedimientos innovadores para la manutención de productos a granel.</p>
+        <div class="imagenGrande">
+          <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/EliminacionDeObstruccion/obstrucciones_pegaduras.jpg" alt="Imagen proceso eliminacion Obstrucciones">
+        </div>
+        <div class="container mt-5 mb-5">
+          <p>
+            Combinación de potencia e innovación para eliminar taponamientos y concreciones.
+          </p>
+          <p>
+            Proponemos soluciones preventivas que permiten optimizar la productividad y recuperar la capacidad de almacenamiento en su integridad.
+          </p>
+          <ul class="list">
+            <li><span>Fuerza de impacto:</span> Aerodinamismo del cabezal / Relación entre volumen calderín & DN de salida del cabezal.</li>
+            <li><span>Seguridad positiva:</span> No hay tiro de AIRCHOC® / MACSYS ante una bajada de presión de aire.</li>
+            <li><span>Calidad:</span> Depósito galvanizado por dentro y fuera / Cabezal de hierro fundido.</li>
+            <li><span>Mantenimiento:</span> Acceso directo al mecanismo.</li>
+            <li><span>Fiabilidad:</span> Purga de escape acelerada protegida / Pistón autocentrador.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="container-fluid text-center">
+          <h3 class="mb-5">Problemas de obstrucciones y pegaduras: Airchoc® Wireless</h3>
+          <p>
+            AIRCHOC® actúa directamente en el producto. Libera al instante un volumen de aire comprimido de entre 4 y 400 litros a través de un orificio de salida adaptado.
+          </p>
+          <p>
+            Diámetro nominal de salida de 25 a 300mm.
+          </p>
+          <p>
+            Disponible en 4 modalidades:
+          </p>
+          <ul class="list">
+            <li><span>Estándar.</span></li>
+            <li><span>Alta temperatura.</span></li>
+            <li><span>ATEX Zone 20.</span></li>
+            <li><span>Inoxidable alimentario.</span></li>
+          </ul>
+          <p>
+            Más de 50.000 instalaciones AIRCHOC® en más de 90 países.
+          </p>
+        </div>
+        <hr>
+        <div class="container-fluid text-center">
+          <h3 class="mb-5">Problemas de acceso y zonas de seguridad: Macsys Wireless:</h3>
+          <p>Número de cabezales de 2 a 8.</p>
+          <p>Diámetro nominal de salida de 100 a 150mm.</p>
+          <p>Capacidad del depósito de 200 litros.</p>
+          <p>Tubos flexibles reforzados con metal o caucho.</p>
+          <p>Disponible en 2 modalidades:</p>
+          <ul class="list">
+            <li><span>Estándar</span></li>
+            <li><span>Alta temperatura</span></li>
+          </ul>
+          <div class="imagenesGrid">
+            <div class="one">
+              <img class="imgGrid" src="../Assets/Imgs/MedioAmbiente/StandardIndustries/EliminacionDeObstruccion/Captura de Pantalla 2021-06-23 a la(s) 21.29.16.png" alt="Imagen Obstrucciones 1">
+            </div>
+            <div class="two">
+              <img class="imgGrid" src="../Assets/Imgs/MedioAmbiente/StandardIndustries/EliminacionDeObstruccion/Captura de Pantalla 2021-06-23 a la(s) 21.29.25.png" alt="Imagen Obstrucciones 2">
+            </div>
+            <div class="three">
+              <img class="imgGrid" src="../Assets/Imgs/MedioAmbiente/StandardIndustries/EliminacionDeObstruccion/Captura de Pantalla 2021-06-23 a la(s) 21.29.35.png" alt="Imagen Obstrucciones 3">
+            </div>
+            <div class="four">
+              <img class="imgGrid" src="../Assets/Imgs/MedioAmbiente/StandardIndustries/EliminacionDeObstruccion/Captura de Pantalla 2021-06-23 a la(s) 21.29.42.png" alt="Imagen Obstrucciones 4">
+            </div>
+            <div class="five">
+              <img class="imgGrid" src="../Assets/Imgs/MedioAmbiente/StandardIndustries/EliminacionDeObstruccion/Captura de Pantalla 2021-06-23 a la(s) 21.29.50.png" alt="Imagen Obstrucciones 5">
+            </div>
+            <div class="six">
+              <img class="imgGrid" src="../Assets/Imgs/MedioAmbiente/StandardIndustries/EliminacionDeObstruccion/Captura de Pantalla 2021-06-23 a la(s) 21.30.11.png" alt="Imagen Obstrucciones 6">
+            </div>
+            <div class="seven">
+              <img class="imgGrid" src="../Assets/Imgs/MedioAmbiente/StandardIndustries/EliminacionDeObstruccion/Captura de Pantalla 2021-06-23 a la(s) 21.30.42.png" alt="Imagen Obstrucciones 7">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Limpieza Industrial -->
+      <div class="container-fluid mb-5 text-center oculto" id="sectionLimpiezaInd">
+        <h3 class="mb-5">Limpieza industrial por aspiración</h3>
+        <div class="container">
+          <p>
+            Nuestra gama de maquinaria industrial de aspiración ha sido diseñada para responder a todas sus necesidades de limpieza y bombeo, sea cual sea su sector de actividad y el tipo de producto, pulverulento, a granel. De 4 a 300 kW, eléctrico o diesel, unidades fijas, móviles o camiones con preseparadores y accesorios.
+          </p>
+          <span>La aspiración mediante red fija:</span>
+          <ul class="list mt-3">
+            <li>Nuestras centrales de aspiración móviles, desplazables y fijas pueden conectarse a redes de tuberías.</li>
+            <li>Esta solución mejora la productividad de la limpieza por aspiración, reduciendo las manutenciones de flexibles y accesorios, aumentando el rendimiento de aspiración.</li>
+            <li>Refuerza la seguridad de los operarios.</li>
+            <li>Disminuye los trabajos penosos</li>
+          </ul>
+        </div>
+        <div class="imagenGrande">
+          <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/LimpiezaPorAspiracion/medio_ambiente_obstrucciones_aspiracion.jpg" alt="Imagen limpieza por aspiracion industrial">
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 imgCamion">
+              <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/LimpiezaPorAspiracion/Captura de Pantalla 2021-06-24 a la(s) 01.36.58.png" alt="">
+            </div>
+          </div>
+        </div>
+          <div class="imgsLimpAsp mt-2 container-fluid">
+            <div class="imgLimp">
+              <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/LimpiezaPorAspiracion/Captura de Pantalla 2021-06-24 a la(s) 01.37.07.png" alt="">
+            </div>
+            <div class="imgLimp">
+              <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/LimpiezaPorAspiracion/Captura de Pantalla 2021-06-24 a la(s) 01.37.18.png" alt="">
+            </div>
+            <div class="imgLimp">
+              <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/LimpiezaPorAspiracion/Captura de Pantalla 2021-06-24 a la(s) 01.37.25.png" alt="">
+            </div>
+          </div>
+      </div>
+      <!-- Optimización de transp -->
+      <div class="container-fluid mb-5 text-center oculto" id="sectionOptiTransp">
+        <h3>Transportadores de cinta</h3>
+        <div class="container mt-5">
+          <p>
+            Optimizar la estanquidad y la seguridad de todo transportador de cinta entre los puntos de carga y descarga. Esta solución permite cumplir las normas sobre medioambiente y seguridad al tiempo que reduce los costos de explotación, mantenimiento y limpieza.
+          </p>
+          <span>
+            Ventajas:
+          </span>
+          <ul class="list mb-5">
+            <li>Estanqueidad (Canalización de las emisiones de polvo).</li>
+            <li>Seguridad del personal.</li>
+            <li>Retorno sobre inversión rápido.</li>
+            <li>Supresión de los desbordamientos de materia.</li>
+            <li>Mantenimiento fácil y mínimo.</li>
+          </ul>
+          <span>La solución a los problemas de estanquidad y seguridad: LIFTUBE®</span>
+          <p class="mt-5">
+            El sistema patentado LIFTUBE® permite a la cinta pase sobre un rodillo central horizontal basculante y deslizarse por las canaletas laterales , que también son basculantes. Una cubierta desmontable se adapta al conjunto para garantizar la reducción de las emisiones de polvo del transportador. La cubierta y el rodillo central horizontal son los únicos cuya dimensión depende de la anchura del transportador. La cinta transportadora y los rodillos son fácilmente accesibles gracias a unos innovadores soportes basculantes.
+          </p>
+        </div>
+        <div class="container-fluid gridTransp">
+          <div class="img1">
+            <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/TransportadoresDeCinta/Captura de Pantalla 2021-06-24 a la(s) 19.55.16.png" alt="">
+          </div>
+          <div class="img2">
+            <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/TransportadoresDeCinta/Captura de Pantalla 2021-06-24 a la(s) 19.54.35.png" alt="">
+          </div>
+          <div class="img3">
+            <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/TransportadoresDeCinta/Captura de Pantalla 2021-06-24 a la(s) 19.54.48.png" alt="">
+          </div>
+          <div class="img4">
+            <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/TransportadoresDeCinta/Captura de Pantalla 2021-06-24 a la(s) 19.55.01.png" alt="">
+          </div>
+          <div class="img5">
+            <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/TransportadoresDeCinta/Captura de Pantalla 2021-06-24 a la(s) 19.55.25.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- Prestaciones de limpieza -->
+      <div class="container-fluid mb-5 text-center oculto" id="sectionPrestLimpSilos">
+        <h3 class="mb-5">Limpieza de silos y tolvas</h3>
+        <div class="container text-center">
+          <p class="mb-5">
+            Equipos de gran alcance para una limpieza completa, rápida y segura de sus unidades de almacenamiento.
+            Gracias a nuestro saber hacer en el ámbito de los taponamientos, proponemos soluciones adaptadas para resolver problemas de chimeneas y bóvedas. Con la limpieza de silos y tolvas, se recupera la capacidad de almacenamiento en su integridad y con total seguridad.
+          </p>
+          <span>Ventajas:</span>
+          <ul class="list mt-4">
+            <li><span>Seguridad total: </span>Ninguna presencia humana en el interior de los silos y tolvas / Cumplimiento</li>
+            <li><span>Ahorro: </span>Intervención sin interrupción de la producción. Recuperación del 100 % de la capacidad de almacenamiento. Sin pérdida de materia.</li>
+            <li><span>Eficiencia: </span>Intervención por arriba o por abajo y con cualquier tipo de materia / Intervención rápida y eficaz.</li>
+            <li><span>Medioambiente: </span>Perforación sin agua ni coadyuvante (no se contamina el producto).</li>
+          </ul>
+        </div>
+        <div class="container-fluid mt-5 text-center" id="infoPowLimpSilas">
+            <div>
+              <span>La solución a los problemas de taponamientos de tipo bóveda: POWERNET</span>
+              <ul class="list mt-4">
+                <li>Diámetro de perforación por arriba o por debajo de las unidades de almacenamiento: de 65 a 300 mm.</li>
+                <li>Profundidad de intervención : hasta 45 m.</li>
+                <li>Mando a distancia desde una boca de hombre</li>
+                <li>Interviene antes del GIRONET.
+                  <ul class="list">
+                    <li>Neumática para productos desmenuzables.</li>
+                    <li>Hidráulica para productos duros.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/LimpiezaDeSilos/limpieza_silos.jpg" alt="Imagen Limpieza de Silos 1">
+            </div>
+        </div>
+        <div class="container-fluid mt-5" id="infoGirLimpSilas">
+          <div>
+            <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/LimpiezaDeSilos/limpieza_silos_GIRONET.jpg" alt="Imagen Limpieza Silos 2">
+          </div>
+          <div>
+            <span>La solución a los problemas de taponamientos de tipo chimenea: GIRONET</span>
+            <ul class="list">
+              <li>Brazo articulado y rotativo a 360°.00 mm.</li>
+              <li>Profundidad de intervención : hasta 45 m.</li>
+              <li>Mando a distancia desde una boca de hombre de 400 mm de diámetro, como mínimo.</li>
+              <li>Versiones:
+                <ul class="list">
+                  <li>Neumática y neumática ATEX para productos friables.</li>
+                  <li>Hidráulica para productos duros.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Comeinza Footer -->
@@ -209,11 +428,13 @@
             <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
           </div>
         </div>
-      </footer>
+    </footer>
       <!-- Finaliza Footer -->
       
 
     <!-- Script Bootstrap 5.2 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script src="../Js/MedioAmbiente.js"></script>
 </body>
 </html>
