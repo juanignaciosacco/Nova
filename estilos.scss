@@ -16,8 +16,20 @@ $girsMedioDoradoMasOscuro: #919166;
 
 .portada {
   width: 100%;
+  img {
+    width: 100%;
+  }
 }
 
+li {
+  margin: 0;
+  padding: o;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 h1 {
   font-weight: 500;
@@ -31,10 +43,12 @@ h2 {
 
 h3 {
   font-weight: 300;
+  color: $girsMedioDoradoMasOscuro;
 }
 
 h5 {
   font-weight: 300;
+  color: $girsMedioDoradoMasOscuro;
 }
 
 hr {
@@ -67,13 +81,77 @@ hr {
   }
 }
 
+.list {
+  li {
+    list-style-position: inside;
+  }
+}
+
+.logoSobrePortada {
+  width: 400px;
+  position: absolute;
+  top: 270px;
+  left: 45%;
+
+}
+
 /* Comeinza Navbar */
+
+nav {
+  z-index: 1002;
+}
 
 .logo {
   width: 200px;;
 }
 
 /* Fin Navbar */
+
+/* Comeinza Pagina Home */
+
+.logoTitulo {
+  width: 400px;
+}
+
+.serviciosCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.servCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 2px solid $grisMedioClaro;
+  i {
+    font-size: 100px;
+    color: $girsMedioDoradoMasOscuro;
+  }
+  button {
+    width: 50%;
+  }
+}
+
+/* Finaliza Pagina Home */
+
+/* Comienza pagina Sobre Nosotros */
+
+#InfoSobreNos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 50px;
+}
+
+.txtSobreNos {
+  width: 500px;
+}
+
+/* Finaliza pagina Sobre Nosotors */
 
 
 /* Comeinza pagina Medio Ambiente */
@@ -352,11 +430,7 @@ span {
   }
 }
 
-.list {
-  li {
-    list-style-position: inside;
-  }
-}
+
 
 .imagenGrande {
   width: 800px;
@@ -376,6 +450,98 @@ span {
   &:hover {
     color: $grisClaro;
   }
+}
+
+.imgChipSealerGrid {
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: 3;
+  img {
+    width: 100%;
+  }
+}
+
+.imgChip1 {
+  grid-column: 3/5;
+  grid-row: 2/4;
+}
+
+.imgChip2 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.imgChip3 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.imgChip4 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.imgChip5 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.imgChip6 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.imgsDistribuidorTiro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  div {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.gridImgsEnuo {
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: 3;
+  img {
+    width: 100%;
+  }
+}
+
+.img4Enuo {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.img5Enuo {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.img3Enuo {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.img2Enuo {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.img6Enuo {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.img1Enuo {
+  grid-column: 3/5;
+  grid-row: 2/4;
 }
 
 /* Finaliza pagina Asfalto */
@@ -409,6 +575,13 @@ form {
 .footer {
     background-color: #f8f9fa;
     padding: 40px 0;
+
+    a {
+      text-decoration: none;
+      i {
+        margin-right: 5px;
+      }
+    }
     
     .footer-bottom {
       background-color: #e9ecef;
@@ -469,3 +642,226 @@ form {
     }
   }
   
+  @media only screen and (max-width: 576px) {
+
+    .logoSobrePortada {
+      display: none;
+    }
+
+    .logoTitulo {
+      width: 80%;
+    }
+    
+    .list {
+      margin: 0 auto;
+    }
+
+    // Pagina Medio Ambiente
+
+    .productosMedioAmbiente {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      row-gap: 20px;
+    }
+    
+    .prodCard {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .imgsBarometrica {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+    .imgContenedorResiduos {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .imgsContainer {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    
+    .imagenGrande {
+      width: 100%;
+    }
+
+    .imagenesGrid {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      img {
+        width: 100%;
+      }
+    }
+
+    #infoPowLimpSilas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+    }
+    
+    #infoGirLimpSilas {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .logoSobrePortada {
+      display: none;
+    }
+    
+    .list {
+      margin: 0 auto;
+    }
+
+    // Pagina Medio Ambiente
+
+    .imgsBarometrica {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+    .imgContenedorResiduos {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .imgsContainer {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    
+    .imagenGrande {
+      width: 100%;
+    }
+
+    .imagenesGrid {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      img {
+        width: 100%;
+      }
+    }
+
+    #infoPowLimpSilas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+    }
+    
+    #infoGirLimpSilas {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+    }
+
+  }
+  @media only screen and (max-width: 1200px) {
+
+    .logoSobrePortada {
+      display: none;
+    }
+    
+    .list {
+      margin: 0 auto;
+    }
+
+    // Pagina Medio Ambiente
+
+    .imgsBarometrica {
+      display: flex;
+      flex-direction: row;
+      img {
+        width: 70%;
+        padding: 10px;
+      }
+    }
+
+    .imgContenedorResiduos {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .imgsContainer {
+      display: flex;
+      flex-direction: row;
+      row-gap: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    
+    .imagenGrande {
+      width: 100%;
+    }
+
+    .imagenesGrid {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      img {
+        width: 100%;
+      }
+    }
+
+    #infoPowLimpSilas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+    }
+    
+    #infoGirLimpSilas {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+    }
+
+  }

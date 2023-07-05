@@ -43,7 +43,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="./Repuestos.html">Repuestos</a>
                   </li>
- 
+<!--  
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Mediciones
@@ -53,7 +53,7 @@
                       <li><a class="dropdown-item" href="#">Another action</a></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                  </li>
+                  </li> -->
                   <li class="nav-item">
                     <a class="nav-link" href="./Contacto.html">Contacto</a>
                   </li>
@@ -72,14 +72,14 @@
 
     <main>
       <h1 class="text-center mt-5">Asfalto</h1>
-      <div class="container buttonsContainerAsf">
+      <div class="container buttonsContainerAsf mt-5">
         <button class="btn btn-hoverDif" id="sealmasterBtn">Sealmaster</button>
         <button class="btn btn-hoverDif" id="metongBtn">Metong</button>
-        <button class="btn btn-hoverDif">Enuo</button>
+        <button class="btn btn-hoverDif" id="enuoBtn">Enuo</button>
       </div>
 
       <!-- COMIENZA SECTION SEALMASTER -->
-      <div class="container-fluid mb-5 oculto" id="sealmaster">
+      <div class="container-fluid mb-5 mt-5" id="sealmaster">
         <div class="text-center mt-5">
           <img class="logoSM" src="../Assets/Imgs/Asfalto/Sealmaster/sealmaster.png" alt="Logo Sealmastes">
         </div>
@@ -115,7 +115,8 @@
           </div>
         </div>
         <!-- COMIENZAN SECTION PRODUCTOS SEALMASTER -->
-        <div class="container-fluid text-center mb-5 oculto" id="sealmaster_tr300">
+        <hr>
+        <div class="container-fluid text-center mt-5 mb-5 oculto" id="sealmaster_tr300">
           <h2>Bahcera TR300</h2>
           <div class="container">
             <div class="imagenGrande">
@@ -137,7 +138,7 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/CiMrZSHQGKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="container-fluid text-center mb-5 oculto" id="sealmaster_tr575">
+        <div class="container-fluid text-center mt-5 mb-5 oculto" id="sealmaster_tr575">
           <h2>Bahcera TR575</h2>
           <div class="container">
             <div class="imagenGrande">
@@ -158,7 +159,7 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/pbOWNns1heE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="container-fluid text-center mb-5 oculto" id="sealmaster_crackpro125">
+        <div class="container-fluid text-center mt-5 mb-5 oculto" id="sealmaster_crackpro125">
           <h2>Bahcera Crack Pro 125</h2>
           <div class="container">
             <div class="imagenGrande">
@@ -184,7 +185,7 @@
       </div>
 
       <!-- COMIENZA SECTION METONG -->
-      <div class="container-fluid mb-5" id="metong">
+      <div class="container-fluid mb-5 mt-5 oculto" id="metong">
         <div class="text-center mt-5">
           <img class="logMetong" src="../Assets/Imgs/Asfalto/Metong/metong_logo.jpg" alt="Logo Metong">
         </div>
@@ -211,30 +212,32 @@
         <div class="container-fluid" id="productosMetong">
           <div class="prodsMetong text-center">
             <h5>RA 66 - Camion regador de asfalto 600 ltrs.</h5>
-            <img class="mb-2" src="../Assets/Imgs/Asfalto/Metong/RA66/Ra66 1.png" alt="Camion RA66 Metong">
-            <a href=""><button class="btn" id="btnRA66">Ver más</button></a>
+            <img class="mb-2" src="../Assets/Imgs/Asfalto/Metong/RA66/Ra66_1.png" alt="Camion RA66 Metong">
+            <a href="#metong_RA66"><button class="btn" id="btnRA66">Ver más</button></a>
           </div>
           <div class="prodsMetong text-center">
             <h5>Chip Sealer LMT 5052 TFC</h5>
-            <img class="mb-2" src="../Assets/Imgs/Asfalto/Metong/Chip sealer/camion metong.png" alt="Camion LMT 5052 Metong">
-            <a href=""><button class="btn" id="btnChip">Ver más</button></a>
+            <img class="mb-2" src="../Assets/Imgs/Asfalto/Metong/ChipSealer/camionMetong.png" alt="Camion LMT 5052 Metong">
+            <a href="#metong_chipSealer"><button class="btn" id="btnChip">Ver más</button></a>
           </div>
           <div class="prodsMetong text-center">
             <h5>Distribuidor de asfalto de tiro</h5>
-            <img class="mb-2" src="../Assets/Imgs/Asfalto/Metong/Distribuidora de asflato/Captura de Pantalla 2021-06-26 a la(s) 20.41.51.png">
-            <a href=""><button class="btn" id="btnDistr">Ver más</button></a>
+            <img class="mb-2" src="../Assets/Imgs/Asfalto/Metong/DistribuidoraDeAsflato/distribuidora1.png">
+            <a href="#metong_distAsfTiro"><button class="btn" id="btnDistr">Ver más</button></a>
           </div>
           <div class="prodsMetong text-center">
             <h5>Plantas de producción de asfalto</h5>
             <img class="mb-2" src="../Assets/Imgs/Asfalto/Metong/Plataforma de prod. asfalto/Plataforma prod. de asfalto.png">
-            <a href=""><button class="btn" id="btnPlantaProd">Ver más</button></a>
+            <a href="http://metongspanish.com/3-bitumen-plant.html" target="_blank"><button class="btn" id="btnPlantaProd">Ver más</button></a>
           </div>
         </div>
+        <hr>
         <!-- COMIENZAN SECTIONES DE PRODUCTOS METONG -->
-        <div class="container-fluid text-center" id="metong_RA66">
+        <!-- RA66 -->
+        <div class="container-fluid mt-5 text-center oculto" id="metong_RA66">
           <h2>RA-66 CAMION REGADOR DE ASFALTO METONG 6.600 Ltr.</h2>
           <div class="imagenGrande">
-            <img src="../Assets/Imgs/Asfalto/Metong/RA66/Ra66 2.png" alt="Imagen camion Metong RA66">
+            <img src="../Assets/Imgs/Asfalto/Metong/RA66/Ra66_2.png" alt="Imagen camion Metong RA66">
           </div>
           <div>
             <div class="mt-5 mb-5">
@@ -296,7 +299,7 @@
               </p>
             </div>
             <div class="mt-5 mb-5">
-              <h4>Carga de asfalot:</h4>
+              <h4>Carga de asfalto:</h4>
               <p>
                 La carga de asfalto puede realizarse por succión por medio de la bomba del equipo. Esta bomba tiene doble sentido, el riego de asfalto y la carga del equipo. La carga siempre debe ser a nivel positivo , el deposito de carga debe situarse por encima de la bomba de carga.
               </p>
@@ -312,54 +315,223 @@
             </div>
           </div>
         </div>
+        <!-- Chip Sealer -->
+        <div class="container-fluid text-center oculto" id="metong_chipSealer">
+          <h2>CHIP SEALER LMT5052TFC</h2>
+          <div class="container">
+            <span>Esparcidor de ligante asfáltico y gravilla simultáneo</span>
+            <p class="mt-3">
+              El Chip Sealer es un regador simultáneo desarrollado por Metong de conformidad con las normas internacionales. Es ampliamente utilizado en las construcciones de carreteras. Puede regar el asfalto y gravilla al mismo tiempo, así como puede rociar por separado. Las carreteras construidas por la extendedora simultánea tienen la ventaja de:
+            </p>
+            <ul class="list">
+              <li><span>Ahorro de costos.</span></li>
+              <li><span>Resistencia al desgaste y evitar deslizamiento de la carretera.</span></li>
+              <li><span>Buena capacidad a prueba de agua.</span></li>
+            </ul>
+            <p class="mt-3">
+              La calidad del trabajo es mejor debido a que la adherencia de la gravilla al asfalto es inmediato por tratarse de un sistema simultaneo.
+            </p>
+            <p>
+              El flujo de tráfico se recupera más rápido al término de cualquier construcción de carreteras y es conveniente para la construcción de diferentes grados de carreteras.
+            </p>
+          </div>
+          <div class="container-fluid imagenGrande mt-5 mb-5">
+            <img src="../Assets/Imgs/Asfalto/Metong/ChipSealer/chipSealer2.png" alt="Camion Chip Sealer">
+          </div>
+          <div class="container">
+            <p><span>Cooperación Internacional y alta calidad.</span></p>
+            <p>
+              El Chip Sealer se desarrolla bajo la dirección de la Universidad Chang’an y el sector de desarrollo técnico de nuestra empresa, y sobre la base de la adopción de tecnologías avanzadas extranjeras y nacionales.
+            </p>
+            <p>
+              Es un tipo de equipo de construcción de carreteras de alta tecnología a un nivel internacional. Son de alta automatización, incluso rociadores, de fácil manejo, gran capacidad de carga y una gran eficacia.
+            </p>
+            <ul class="list mt-3 mb-5">
+              <li>La extendedora de sello simultánea adopta un chasis de marca Dongfeng con presencia local dentro del grupo economico.</li>
+              <li>El tanque de asfalto utiliza un material de preservación del calor de aluminio de silicio ácido y con buen desempeño de la preservación del calor.</li>
+              <li>El tanque de asfalto puede rociar con cierta cantidad por medio de tubería fija de rocío o atomizada con una pistola de mano de atomización.</li>
+              <li>La limpieza de tuberías utiliza aceite de conducción de calor y se puede limpiar con aire a alta presión. Las boquillas no se taponan con facilidad.</li>
+              <li>La estructura del aspersor de asfalto y granito es compacto. Es cómoda para la conducción y conveniente para su uso.</li>
+            </ul>
+            <h4>ESPECIFICACIONES TÉCNICAS:</h4>
+            <ul class="list mt-5 mb-5">
+              <li><span>Modelo: </span>Chip Sealer</li>
+              <li><span>Capacidad de tanque: </span>5.000 L.</li>
+              <li><span>Ancho de barra de riego: </span>4 m.</li>
+              <li><span>Volumen de riego: </span>0,25 - 3,0 L/m2</li>
+              <li><span>Quemador: </span>Riello (Italia)</li>
+            </ul>
+          </div>
+          <div class="container-fluid imagenGrande">
+            <img src="../Assets/Imgs/Asfalto/Metong/ChipSealer/metong_esquema_ok.jpg" alt="Esquema Chip Sealer">
+          </div>
+          <div class="container">
+            <h4>Ventajas:</h4>
+            <p>Velocidad y precisión del trabajo programado por computadora desde la cabina.</p>
+            <p>Trabaja en forma sincronizada, aplicando capas de ligante asfáltico y gravilla.</p>
+            <p>Optimizar cosastos y tiempos de obra.</p>
+            <p>Requiere un solo operario / chofer.</p>
+            <p>Reduce mermas de insumos.</p>
+            <p>Rápida recuperación de la inversión, con la mejor relación costo / beneficio del mercado.</p>
+            <p class="mt-5">
+              <span>Computador SIEMENS en cabina automatico: </span> Se ingresan los litros por metros cuadrados a regar y la computadora devuelve la velocidad de trabajo. La computadora tiene impresora incorporada permitiendo llevar registro del material utilizado.
+              <br>
+              Tambien posee un historial de distancia y area regados.
+            </p>
+            <p>
+              <span>Generador HONDA: </span> Alimenta el sistema de calentamiento en forma independiente al motor del camión. 
+              <br>
+              Permite calentar el asfalto sin tener el camión en marcha.
+            </p>
+            <p>
+              <span>Tablero controlador de sistema de calentamiento: </span> Permite definir la temperatura para calentar el aceite térmico que luego calentara el asfalto por recirculación dentro del tanque. El sistema tiene corte automatico cuando el aceite llega a la temperatura deseada y encendido automatico cuando la temperatura desciende.
+            </p>
+            <p>
+              El sistema posee quemador RIELLO de origen italiano, accionado por tablero controlador para calentar el aceite
+            </p>
+            <p><span>Motor del camión: </span> CUMMINS</p>
+          </div>
+          <div class="container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4Y-MA7ixi4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="container-fluid imgChipSealerGrid mt-5">
+            <div class="imgChip1">
+              <img src="../Assets/Imgs/Asfalto/Metong/ChipSealer/chipSealer1.png" alt="Imagen 1 Chip Sealer">
+            </div>
+            <div class="imgChip2">
+              <img src="../Assets/Imgs/Asfalto/Metong/ChipSealer/chipSealer3.png" alt="Imagen 2 Chip Sealer">
+            </div>
+            <div class="imgChip3">
+              <img src="../Assets/Imgs/Asfalto/Metong/ChipSealer/chipSealer4.png" alt="Imagen 3 Chip Sealer">
+            </div>
+            <div class="imgChip4">
+              <img src="../Assets/Imgs/Asfalto/Metong/ChipSealer/chipSealer5.png" alt="Imagen 4 Chip Sealer">
+            </div>
+            <div class="imgChip5">
+              <img  src="../Assets/Imgs/Asfalto/Metong/ChipSealer/chipSealer6.png" alt="Imagen 5 Chip Sealer">
+            </div>
+            <div class="imgChip6">
+              <img src="../Assets/Imgs/Asfalto/Metong/ChipSealer/chipSealer7.png" alt="Imagen 6 Chip Sealer">
+            </div>
+          </div>
+        </div>
+        <!-- Distribuidor de tiro -->
+        <div class="container-fluid text-center oculto" id="metong_distAsfTiro">
+          <h2 class="mb-5 mt-5">Distribuidor de asfalto de tiro</h2>
+          <div class="container">
+            <p>
+              El remolque distribuidor de asfalto LSB1000 es una máquina especializada para la construcción y el mantenimiento de carreteras. Es muy utilizado para trabajos de pulverización y el transporte de asfalto líquido a alta temperatura. Cuenta con un fácil modo de uso, bajo centro de gravedad y estructura compacta.
+            </p>
+            <p>
+              Gracias a su estructura desmontable este remolque puede transportarse fácilmente cuando no sea necesaria la aspersión de asfalto. Su bomba de asfalto trabaja accionada por un engranaje reductor conectado al motor diésel. Esta bomba externa es de muy fácil mantenimiento. 
+            </p>
+            <p>
+              El tanque de asfalto utiliza como material de recubrimiento el silicato de aluminio, este actúa como capa de aislamiento y tiene un excelente rendimiento en cuanto a la preservación de calor. En general no hay necesidad de calentar el tanque, pero de darse el caso, el remolque cuenta con un quemador diésel.
+            </p>
+            <p>
+              El aire a alta presión puede eliminar fácilmente los restos de asfalto de las tuberías después de que el mismo se ha disuelto con el diésel, así pues, es difícil que las boquillas se obstruyan.
+            </p>
+          </div>
+          <div class="imagenGrande mt-5">
+            <img src="../Assets/Imgs/Asfalto/Metong/DistribuidoraDeAsflato/tabla.png" alt="Tabla tecnica distribiodra de asfalto de tiro">
+          </div>
+          <div class="container-fluid imgsDistribuidorTiro">
+            <div>
+              <img src="../Assets/Imgs/Asfalto/Metong/DistribuidoraDeAsflato/distribuidora2.png" alt="Distribuidora de asfalto de tiro 1">
+            </div>
+            <div>
+              <img src="../Assets/Imgs/Asfalto/Metong/DistribuidoraDeAsflato/DistruibuidoraDeAsfalto2.png" alt="Distribuidora de asfalto de tiro 2">
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- COMIENZA SECTION ENUO -->
+      <div class="container-fluid mb-5 mt-5 oculto" id="enuo">
+        <div class="text-center mt-5">
+          <img class="logoSM" src="../Assets/Imgs/Asfalto/Enuo/LogoEnuo.png" alt="Logo ENUO">
+        </div>
+        <div class="container text-center mt-5">
+          <p>
+            <span>ENUO </span>es un fabricante de equipos livianos para mantenimiento y servicio vial,  de alta calidad. La fabrica fue fundada hace 10 años en China  y desde  entonces se encuentra presente en Uruguay  con equipos abastecidos a RyK Ingenieros,  Grinor e Intendencia de Flores.
+          </p>
+          <p>
+            <span>ENUO </span>se encuentra en Zhongshan, Guangdong, China, con una ubicación estratégica próxima a 5 aeropuertos internacionales: Hong Kong, Macao, Guangzhou, Shenzhen y Zhuhai, y  3 puertos marítimos de gran porte de Shenzhen, Guangzhou y Hong Kong.
+          </p>
+          <p>
+            A nivel logístico los envíos son muy convenientes y rápidos. 
+          </p>
+        </div>
+        <div class="text-center mt-5">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/CXTucRc9C8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="container text-center gridImgsEnuo mt-5">
+          <div class="img1Enuo">
+            <img src="../Assets/Imgs/Asfalto/Enuo/ENUO1.png" alt="Imagen ENUO 1">
+          </div>
+          <div class="img2Enuo">
+            <img src="../Assets/Imgs/Asfalto/Enuo/ENUO2.png" alt="Imagen ENUO 2">
+          </div>
+          <div class="img3Enuo">
+            <img src="../Assets/Imgs/Asfalto/Enuo/ENUO3.png" alt="Imagen ENUO 3">
+          </div>
+          <div class="img4Enuo">
+            <img src="../Assets/Imgs/Asfalto/Enuo/ENUO4.png" alt="Imagen ENUO 4">
+          </div>
+          <div class="img5Enuo">
+            <img src="../Assets/Imgs/Asfalto/Enuo/ENUO5.png" alt="Imagen ENUO 5">
+          </div>
+          <div class="img6Enuo">
+            <img src="../Assets/Imgs/Asfalto/Enuo/ENUO6.png" alt="Imagen ENUO 6">
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Comeinza Footer -->
     <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center text-md-start">
+            <h3>Información de contacto</h3>
+            <p>Dirección: 123 Calle Principal, Ciudad</p>
+            <p>Teléfono: +1 234 567 890</p>
+            <p>Email: info@tuempresa.com</p>
+          </div>
+          <div class="col-md-4 text-center text-md-start">
+            <h3>Enlaces rápidos</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Empresa</a></li>
+              <li><a href="#">Medio Ambiente</a></li>
+              <li><a href="#">Asfalto</a></li>
+              <li><a href="#">Repuestos</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center text-md-start">
+            <h3>Síguenos en las redes sociales</h3>
+            <ul class="list-unstyled social-icons">
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h3>Información de contacto</h3>
-              <p>Dirección: 123 Calle Principal, Ciudad</p>
-              <p>Teléfono: +1 234 567 890</p>
-              <p>Email: info@tuempresa.com</p>
-            </div>
-            <div class="col-md-4">
-              <h3>Enlaces rápidos</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Empresa</a></li>
-                <li><a href="#">Medio Ambiente</a></li>
-                <li><a href="#">Asfalto</a></li>
-                <li><a href="#">Repuestos</a></li>
-                <li><a href="#">Contacto</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <h3>Síguenos en las redes sociales</h3>
-              <ul class="list-unstyled social-icons">
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-              </ul>
-            </div>
-          </div>
+          <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
         </div>
-        <div class="footer-bottom">
-          <div class="container">
-            <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
-          </div>
-        </div>
-      </footer>
-      <!-- Finaliza Footer -->
+      </div>
+    </footer>
+    <!-- Finaliza Footer -->
       
 
     <!-- Script Bootstrap 5.2 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!-- Script -->
-    <script src="../Js/index.js"></script>
+    <script src="../Js/Asfalto.js"></script>
 </body>
 </html>

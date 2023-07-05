@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Estilos.css -->
     <link rel="stylesheet" href="../estilos.css">
-    <title>Medio Ambiente Nova Group</title>
+    <title>Industria, producción y medio ambiente Nova Group</title>
 </head>
 <body>
     <header>
@@ -29,13 +29,13 @@
               <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./Empresa.html">Empresa</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Medio Ambiente</a>
+                    <a class="nav-link active" href="#">Industria y producción</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./Asfalto.html">Asfalto</a>
@@ -44,7 +44,7 @@
                     <a class="nav-link" href="./Repuestos.html">Repuestos</a>
                   </li>
  
-                  <li class="nav-item dropdown">
+                  <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Mediciones
                     </a>
@@ -53,7 +53,7 @@
                       <li><a class="dropdown-item" href="#">Another action</a></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                  </li>
+                  </li> -->
                   <li class="nav-item">
                     <a class="nav-link" href="./Contacto.html">Contacto</a>
                   </li>
@@ -71,7 +71,7 @@
 
     <main>
       <!-- Info general -->
-      <h1 class="text-center mt-5 ">Medio Ambiente</h1>
+      <h1 class="text-center mt-5 ">Industria y producción</h1>
       <div class="container-fluid">
         <div class="mt-5 text-center">
           <img class="logoStd" src="../Assets/Imgs/MedioAmbiente/StandardIndustries/standard_industrie.jpg">
@@ -154,7 +154,9 @@
             <p>
               Distintos modelos, capacidades y tipos de tapas. Metálicos o en HDPE. Equipos ya en plaza.
             </p>
-            <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/contenedores_itsa04.jpg">
+            <div class="imgContenedorResiduos">
+              <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/contenedores_itsa04.jpg">
+            </div>
             <h4 class="mt-4">Características:</h4>
             <ul id="listContenedores">
               <li>Cumpliendo standards internacionales</li>
@@ -232,6 +234,11 @@
             <li><span>Estándar</span></li>
             <li><span>Alta temperatura</span></li>
           </ul>
+          <div class="mt-5 mb-5">
+            <a href="../Paginas/Contacto.html">
+              <button class="btn">Solicitar Información</button>
+            </a>
+          </div>
           <div class="imagenesGrid">
             <div class="one">
               <img class="imgGrid" src="../Assets/Imgs/MedioAmbiente/StandardIndustries/EliminacionDeObstruccion/Captura de Pantalla 2021-06-23 a la(s) 21.29.16.png" alt="Imagen Obstrucciones 1">
@@ -271,6 +278,11 @@
             <li>Refuerza la seguridad de los operarios.</li>
             <li>Disminuye los trabajos penosos</li>
           </ul>
+        </div>
+        <div class="mt-5 mb-5">
+          <a href="../Paginas/Contacto.html">
+            <button class="btn">Solicitar Información</button>
+          </a>
         </div>
         <div class="imagenGrande">
           <img src="../Assets/Imgs/MedioAmbiente/StandardIndustries/LimpiezaPorAspiracion/medio_ambiente_obstrucciones_aspiracion.jpg" alt="Imagen limpieza por aspiracion industrial">
@@ -315,6 +327,11 @@
           <p class="mt-5">
             El sistema patentado LIFTUBE® permite a la cinta pase sobre un rodillo central horizontal basculante y deslizarse por las canaletas laterales , que también son basculantes. Una cubierta desmontable se adapta al conjunto para garantizar la reducción de las emisiones de polvo del transportador. La cubierta y el rodillo central horizontal son los únicos cuya dimensión depende de la anchura del transportador. La cinta transportadora y los rodillos son fácilmente accesibles gracias a unos innovadores soportes basculantes.
           </p>
+        </div>
+        <div class="mt-5 mb-5">
+          <a href="../Paginas/Contacto.html">
+            <button class="btn">Solicitar Información</button>
+          </a>
         </div>
         <div class="container-fluid gridTransp">
           <div class="img1">
@@ -388,48 +405,50 @@
             </ul>
           </div>
         </div>
+        <div class="mt-5 mb-5">
+          <a href="../Paginas/Contacto.html">
+            <button class="btn">Solicitar Información</button>
+          </a>
+        </div>
       </div>
     </main>
 
     <!-- Comeinza Footer -->
     <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center text-md-start">
+            <h3>Información de contacto</h3>
+            <a href="tel:+59894222456">
+              <p><i class="fa-sharp fa-solid fa-phone"></i>+598 94 222 456</p>
+            </a>
+            <a href="mailto:info@uynova.com ">
+              <p><i class="fa-solid fa-envelope"></i> info@uynova.com</p>
+            </a>
+          </div>
+          <div class="col-md-4 text-center text-md-start">
+            <h3>Enlaces rápidos</h3>
+            <ul class="list-unstyled">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./Empresa.html">Empresa</a></li>
+              <li><a href="#">Industria y producción</a></li>
+              <!-- <li><a href="#">Asfalto</a></li> -->
+              <li><a href="./Repuestos.html">Repuestos</a></li>
+              <li><a href="./Contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center text-md-start">
+            <img class="logo" src="../Assets/Logo/1563px(negro).png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h3>Información de contacto</h3>
-              <p>Dirección: 123 Calle Principal, Ciudad</p>
-              <p>Teléfono: +1 234 567 890</p>
-              <p>Email: info@tuempresa.com</p>
-            </div>
-            <div class="col-md-4">
-              <h3>Enlaces rápidos</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Empresa</a></li>
-                <li><a href="#">Medio Ambiente</a></li>
-                <li><a href="#">Asfalto</a></li>
-                <li><a href="#">Repuestos</a></li>
-                <li><a href="#">Contacto</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <h3>Síguenos en las redes sociales</h3>
-              <ul class="list-unstyled social-icons">
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-              </ul>
-            </div>
-          </div>
+          <p>&copy; 2023 NOVA Uruguay. Todos los derechos reservados.</p>
         </div>
-        <div class="footer-bottom">
-          <div class="container">
-            <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
-          </div>
-        </div>
+      </div>
     </footer>
-      <!-- Finaliza Footer -->
+    <!-- Finaliza Footer -->
       
 
     <!-- Script Bootstrap 5.2 -->
