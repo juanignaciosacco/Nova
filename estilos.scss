@@ -8,6 +8,14 @@ $girsMedioMasOscuro: #6B6B6B;
 $girsMedioDorado: #ABAB83;
 $girsMedioDoradoMasOscuro: #919166;
 
+@mixin dspgrd($disp, $rows, $cols, $rgap, $cgap) {
+  display: $disp;
+  grid-template-columns: $cols;
+  grid-template-rows: $rows;
+  row-gap: $rgap;
+  column-gap: $cgap;
+}
+
 * {
   font-family: 'Ubuntu', sans-serif;
   color: $grisOscuro;
@@ -92,13 +100,15 @@ hr {
   position: absolute;
   top: 270px;
   left: 45%;
-
 }
 
 /* Comeinza Navbar */
 
 nav {
   z-index: 1002;
+  .dropdown-menu {
+    border: none;
+  }
 }
 
 .logo {
@@ -106,6 +116,101 @@ nav {
 }
 
 /* Fin Navbar */
+
+/* Comienza Footer */
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  .footerFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logoNovaFooter {
+    width: 300px;
+    .logo {
+      width: 100%;
+    }
+  }
+
+  .logoFooter {
+    width: 150px;
+    img {
+      width: 100%;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    i {
+      margin-right: 5px;
+    }
+  }
+  
+  .footer-bottom {
+    background-color: #e9ecef;
+    padding: 10px 0;
+    
+    p {
+      margin: 0;
+      text-align: center;
+      font-size: 14px;
+      color: #6c757d;
+    }
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    padding-left: 0;
+    
+    li {
+      list-style: none;
+      margin-bottom: 5px;
+      
+      a {
+        color: #333;
+        text-decoration: none;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  .social-icons {
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      
+      a {
+        color: #333;
+        text-decoration: none;
+        font-size: 20px;
+        
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+}
+
+/* Fin Footer */
 
 /* Comeinza Pagina Home */
 
@@ -261,11 +366,7 @@ nav {
 }
 
 .gridTransp {
-  display: grid;
-  grid-template-columns: 4;
-  grid-template-rows: 3;
-  row-gap: 10px;
-  column-gap: 10px;
+  @include dspgrd(grid, 3, 4, 10px, 10px);
   img {
     width: 100%;
     height: 100%;
@@ -375,6 +476,8 @@ nav {
 .buttonsContainerAsf {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -398,6 +501,7 @@ span {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    row-gap: 50px;
   }
 }
 
@@ -430,7 +534,14 @@ span {
   }
 }
 
-
+.videooo {
+  width: 660px;
+  height: 460px;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .imagenGrande {
   width: 800px;
@@ -506,9 +617,7 @@ span {
 }
 
 .gridImgsEnuo {
-  display: grid;
-  grid-template-columns: 4;
-  grid-template-rows: 3;
+  @include dspgrd(grid, 4, 3, 10px, 10px);
   img {
     width: 100%;
   }
@@ -546,6 +655,292 @@ span {
 
 /* Finaliza pagina Asfalto */
 
+/* Comienza Pagina Meidicon Gral */
+
+.logoKimo {
+  margin: 50px auto;
+  width: 200px;
+  img {
+    width: 100%;
+  }
+}
+
+.medicionGralGrid {
+  @include dspgrd(grid, 2, 2, 10px, 10px);
+  width: 70%;
+  img {
+    width: 100%;
+  }
+}
+
+.img1MedGral {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.img2MedGral {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.img3MedGral {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.img4MedGral {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/* Fin Pagina Meidicon Gral */
+
+/* Inicio Pagina Balanceadoras */
+
+.logoMedBalanc {
+  width: 250px;
+  margin: 50px auto;
+  img {
+    width: 100%;
+  }
+}
+
+.imgSchenckGrid {
+  @include dspgrd(grid, 3, 4, 10px, 10px);
+  width: 80%;
+}
+
+.img1Schenck {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  img {
+    width: 100%;
+  }
+}
+.img2Schenck {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  img {
+    width: 100%;
+  }
+}
+.img3Schenck {
+  grid-row: 1/4;
+  grid-column: 3/5;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.img4Schenck {
+  grid-row: 2/4;
+  grid-column: 1/3;
+  img {
+    width: 100%;
+  }
+}
+/* Fin Pagina Balanceadoras */
+
+/* Comeinza pagina Ultrasonido */
+
+.logoMedUE {
+  width: 200px;
+  margin: 50px auto;
+  img {
+    width: 100%;
+  }
+}
+
+.imgUltrasonidoGrid {
+  @include dspgrd(grid, 3, 4, 10px, 10px);
+  width: 80%;
+}
+
+.img1Ultrasonido {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  img {
+    width: 100%;
+  }
+}
+
+.img2Ultrasonido {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  img {
+    width: 100%;
+  }
+}
+
+.img3Ultrasonido {
+  grid-row: 1/4;
+  grid-column: 3/5;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.img4Ultrasonido {
+  grid-row: 2/4;
+  grid-column: 1/3;
+  img {
+    width: 100%;
+  }
+}
+
+/* Fin pagina Ultrasonido */
+
+/* Comeinza Pagina Hidrometria */
+
+.logoMedSEBA {
+  margin: 50px auto;
+  width: 200px;
+  img {
+    width: 100%;
+  }
+}
+
+.imgSebaHidroGrid {
+  @include dspgrd(grid, 3, 4, 10px, 10px);
+  width: 80%;
+}
+
+.img1Hidrometria {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  img {
+    width: 100%;
+  }
+}
+
+.img2Hidrometria {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  img {
+    width: 100%;
+  }
+}
+
+.img3Hidrometria {
+  grid-row: 1/4;
+  grid-column: 3/5;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.img4Hidrometria {
+  grid-row: 2/4;
+  grid-column: 1/3;
+  img {
+    width: 100%;
+  }
+}
+
+/* Fin Pagina Hidrometria */
+
+/* Comienza pagina Radares de trafico */
+
+.logoMedMPH {
+  margin: 50px auto;
+  width: 250px;
+  img {
+    width: 100%;
+  }
+}
+
+.imgMPHGrid {
+  @include dspgrd(grid, 3, 4, 10px, 10px);
+  width: 80%;
+}
+
+.img1MPH {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  img {
+    width: 100%;
+  }
+}
+
+.img2MPH {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  img {
+    width: 100%;
+  }
+}
+
+.img3MPH {
+  grid-row: 1/4;
+  grid-column: 3/5;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.img4MPH {
+  grid-row: 2/4;
+  grid-column: 1/3;
+  img {
+    width: 100%;
+  }
+}
+
+/* Fin pagina Radares de trafico */
+
+/* Comienza pagina Testeo para asfalto */
+
+.logoMedHumboldt {
+  margin: 50px auto;
+  width: 250px;
+  img {
+    width: 100%;
+  }
+}
+
+.imgMedTestAsfalto {
+  @include dspgrd(grid, 3, 4, 10px, 10px);
+  width: 80%;
+}
+
+.imgTestAsf1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  img {
+    width: 100%;
+  }
+}
+
+.imgTestAsf2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  img {
+    width: 100%;
+  }
+}
+
+.imgTestAsf3 {
+  grid-row: 1/4;
+  grid-column: 3/5;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.imgTestAsf4 {
+  grid-row: 2/4;
+  grid-column: 1/3;
+  img {
+    width: 100%;
+  }
+}
+
+/* Fin pagina Testeo para asfalto */
+
 /* Pagina contacto */
 
 form {
@@ -569,80 +964,16 @@ form {
 }
 
 /* Fin Pagina contacto */
-
-/* Comienza Footer */
-
-.footer {
-    background-color: #f8f9fa;
-    padding: 40px 0;
-
-    a {
-      text-decoration: none;
-      i {
-        margin-right: 5px;
-      }
-    }
-    
-    .footer-bottom {
-      background-color: #e9ecef;
-      padding: 10px 0;
-      
-      p {
-        margin: 0;
-        text-align: center;
-        font-size: 14px;
-        color: #6c757d;
-      }
-    }
-    
-    h3 {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    
-    p {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-    
-    ul {
-      padding-left: 0;
-      
-      li {
-        list-style: none;
-        margin-bottom: 5px;
-        
-        a {
-          color: #333;
-          text-decoration: none;
-          
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-    
-    .social-icons {
-      li {
-        display: inline-block;
-        margin-right: 10px;
-        
-        a {
-          color: #333;
-          text-decoration: none;
-          font-size: 20px;
-          
-          &:hover {
-            color: #007bff;
-          }
-        }
-      }
-    }
-  }
   
   @media only screen and (max-width: 576px) {
+
+    .videooo {
+      width: 100%;
+      height: auto;
+      iframe {
+        width: 100%;
+      }
+    }
 
     .logoSobrePortada {
       display: none;
@@ -727,9 +1058,40 @@ form {
       column-gap: 10px;
     }
 
+    // Pagina Asfalto
+
+    .medicionGralGrid {
+      width: 100%;
+    }
+
+    .imgSchenckGrid {
+      width: 100%;
+    }
+    
+    .imgUltrasonidoGrid {
+      width: 100%;
+    }
+
+    .imgSebaHidroGrid {
+      width: 100%;
+    }
+
+    .imgMPHGrid {
+      width: 100%;
+    }
+
+    .imgMedTestAsfalto {
+      width: 100%;
+    }
+
   }
 
   @media only screen and (max-width: 768px) {
+
+    iframe {
+      width: 80%;
+      height: 315px;
+    }
 
     .logoSobrePortada {
       display: none;
@@ -797,7 +1159,13 @@ form {
     }
 
   }
+
   @media only screen and (max-width: 1200px) {
+
+    iframe {
+      width: 560px;
+      height: 315px;
+    }
 
     .logoSobrePortada {
       display: none;
