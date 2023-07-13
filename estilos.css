@@ -181,6 +181,9 @@ nav .dropdown-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 .servCard {
