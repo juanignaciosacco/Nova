@@ -413,6 +413,16 @@ nav .dropdown-menu {
 }
 
 /* Fin pagina Medio Ambiente */
+/* Comienza pagina Accesorios para maquinas */
+.imgPoqutec {
+  margin: auto;
+  width: 70%;
+}
+.imgPoqutec img {
+  width: 100%;
+}
+
+/* Fin pagina Accesorios para maquinas */
 /* Comienza pagina Repuestos */
 .containerLogos {
   display: flex;
